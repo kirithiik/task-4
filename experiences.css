@@ -1,0 +1,105 @@
+body {
+  background-image: url('expirence.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+ 
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-family: 'Lucida Sans', sans-serif;
+  background: rgba(0,0,0,0.2);
+}
+
+nav .logo {
+  color: rgb(245, 245, 242);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: rgb(219, 152, 16);
+  text-shadow: 0 0 12px rgba(219, 152, 16, 0.8);
+}
+
+.experiences {
+  padding: 120px 20px 80px 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.experiences h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.experience{
+  display: flex;
+  gap:80px;
+
+}
+
+.experience-card {
+  background: rgb(50, 38, 38);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.experience-card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  color: white;
+}
+
+.experience-card p {
+  font-size: 16px;
+  padding: 0 20px 20px 20px;
+  color: whitesmoke;
+  line-height: 1.5;
+}

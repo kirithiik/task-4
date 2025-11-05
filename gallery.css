@@ -1,0 +1,123 @@
+body {
+  background-image: url('gallery.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: rgba(0,0,0,0.2);
+}
+
+nav .logo {
+  color: rgb(245, 245, 242);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.a {
+  color: rgb(219, 152, 16);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: rgb(219, 152, 16);
+  text-shadow: 0 0 12px rgba(219, 152, 16, 0.8);
+}
+
+.gallery {
+  padding: 120px 20px 80px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.gallery-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  max-width: 320px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(219, 152, 16, 0.4);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(219, 152, 16, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item h3 {
+  font-size: 22px;
+  margin: 18px 0 10px;
+  color: rgb(219, 152, 16);
+}
+
+.gallery-item p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0 18px 20px;
+  line-height: 1.7;
+}

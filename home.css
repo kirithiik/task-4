@@ -1,0 +1,69 @@
+body{
+  background-image: url('main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vh;
+}
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: rgba(0,0,0,0.2);
+}
+nav .logo{
+  color: rgb(245, 245, 242);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.a{
+  color: rgb(219, 152, 16);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  color: rgb(219, 152, 16);
+  text-shadow: 0 0 12px rgba(219, 152, 16, 0.8);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.b{
+  color: rgb(255, 223, 102);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content{
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 2px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
